@@ -31,7 +31,7 @@ body{
     top:0;
     left: 0;
     width:100%;
-    padding: 20px 10%;
+    padding:0px 10%;
     background: #081b29;
     display: flex;
     justify-content: space-between;
@@ -167,19 +167,21 @@ animation-delay: .7s;
 /* about */
 
 .about {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+padding-top: 10%;
 align-items: center;
 gap: 1.5rem;
+padding: 70px 10% 0;
+border:1px solid red;
 }
 
 .about-img img{
+   
     padding-bottom: 20%;
     max-width: 430px;
     height: auto;
     width: 40%;
     border-radius: 8px;
-    margin-left: 250px;
+    margin-left: 2px;
 }
 .about-text h2{
     font-size: 60px;
@@ -213,6 +215,7 @@ gap: 1.5rem;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+    border:1px solid red;
 }
 .sub-title{
     text-align: center;
@@ -228,10 +231,12 @@ gap: 1.5rem;
 }
 
 .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
 }
 .services-list div{
     background-color: transparent;
