@@ -5,24 +5,11 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-:root{
-
-    --1{};
-    --2{};
-    --3{};
-    --4{};
-    --5{};
-    --6{};
-    --7{};
-    --8{};
-    --9{};
-    --10{};
-}
 body{
 
     scroll-behavior: smooth;
     color: #ededed;
-    background: rgb(7, 16, 89);
+    background: rgb(2, 0, 29);
 }
 
 .header{
@@ -52,14 +39,13 @@ body{
 
 .navbar a{
 
-    display: inline-block;
-    font-size: 25px;
+    /* font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    animation: slideTop .5s ease forwards;
+    animation: slideTop .5s ease forwards; */
 }
 
 .navbar a:hover{
@@ -72,7 +58,7 @@ body{
     width: 100vh;
     justify-content: space-between;
     height: 100vh;
-   
+   display: flex;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -211,6 +197,7 @@ border:1px solid red;
 }
 
 #services{
+   
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -235,10 +222,12 @@ border:1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     gap: 5rem;
-    flex-wrap: wrap;
+  
 }
 .services-list div{
+
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
@@ -314,6 +303,23 @@ section{
 
     display: flex;
     flex-wrap: wrap;
+}
+.para{
+    display: flex;
+    padding: 20px;
+}
+.para-y{
+    display: flex;
+    padding-left: 255px;
+}
+.para-m p{
+    display: flex;
+   
+}
+
+.n h3{
+    display: flex;
+    padding-left: 355px;
 }
 
 .containers{
@@ -538,78 +544,72 @@ section{
 
 /* portfolio */
 
-#link{
-    color:aliceblue;
+#link {
+    color: aliceblue;
 }
 
-.main-text{
+.main-text {
     padding-top: 130px;
     margin-top: 260px;
 }
 
-.main-text h2{
+.main-text h2 {
     font-size: 60px;
     line-height: 1;
     text-align: center;
 }
 
-.main-text h2 span{
-    color:#0ef;
+.main-text h2 span {
+    color: #0ef;
 }
 
-.portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
-}
-
-.row{
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
 }
 
-.row img{
+.row img {
     width: 100%;
     border-radius: 8px;
     display: block;
-    transition: transform 0.5;
+    transition: transform 0.5s;
 }
 
-.layer{
-
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1),#0ef);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
     position: absolute;
     border-radius: 8px;
     left: 0;
     bottom: 0;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 40px;
     transition: height 0.5s;
 }
 
-.layer h5{
+.layer h5 {
     color: black;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.layer p{
+.layer p {
     color: black;
     font-size: 1rem;
     line-height: 1.8;
 }
 
-.layer i{
-    color:#ff004f;
+.layer i {
+    color: #ff004f;
     margin-top: 20px;
     font-size: 20px;
     background: white;
@@ -621,24 +621,52 @@ section{
     border-radius: 50%;
 }
 
-.row:hover img{
-
-    transform: scale(1, 1);
+.row img:hover {
+    transform: scale(1.05);
 }
 
-.row:hover .layer{
-    height: 100%
+.row .layer:hover {
+    height: 100%;
+}
+/* testimonials */
+
+.sub-title-t{
+    padding-top: 130px;
+    margin-top: 260px;
 }
 
+.sub-title-t h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+#demo{
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-caption{
+    color: black;
+text-align: center;
+font-size: 18px;
+}
+.carousel-inner{
+    width: 3000px; 
+    height: 300px;
+     max-width: 100%; 
+     margin: 30px auto;
+}
+.carousel-inner span{
+color:#0ef;
+}
 /* contact */
 
 #send , #phone{
     color:#26bbbe;
 }
 
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.contact{ 
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
@@ -777,6 +805,9 @@ section{
     border-radius: 0.5rem;
 }
 
+.form-control .custom-input {
+    width: 100px; /* Adjust the width as needed */
+}
 
 
 
@@ -837,3 +868,34 @@ section{
     border-radius: 8px;
     cursor: pointer;
 }
+
+main{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                 1px 1px 40px #0053b8f7;
+    
+}
+/* #js{
+    height: 354px!important;
+} */
+
+main{
+
+    height:470px;
+    width:433px;
+}
+
+#img{
+
+  position: relative;
+  left: 800px;
+  bottom: 570px;
+  width: 430px;
+ 
+}
+
