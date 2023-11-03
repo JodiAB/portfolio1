@@ -219,7 +219,7 @@ border:1px solid red;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 5rem;
+    gap: 1rem;
   
 }
 .services-list div{
@@ -282,18 +282,7 @@ border:1px solid red;
 
 /* skills */
 
-#icon-color-H{
-    color: orangered;
-}
-#icon-color-C{
-    color: lightskyblue;
-}
-#icon-color-J{
-    color: yellow;
-}
-#icon-color-B{
-    color: #7b08b4;
-}
+
 
 section{
 
@@ -322,7 +311,7 @@ section{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 120px;
+    margin-left: 340px;
 }
 
 .headings{
@@ -890,5 +879,3 @@ main{
   width: 430px;
  
 }
-
-
